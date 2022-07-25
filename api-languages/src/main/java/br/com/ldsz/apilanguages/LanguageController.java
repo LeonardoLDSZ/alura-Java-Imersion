@@ -14,13 +14,13 @@ public class LanguageController {
     @Autowired
     private LanguageRepository repository;
 
-    @GetMapping("languages")
+    @GetMapping("/languages")
     public List<Language> obtainLanguages() {
         List<Language> languages = repository.findAll();
         return languages;
     }
 
-    @PostMapping("languages")
+    @PostMapping("/languages")
     public Language addLanguage(@RequestBody Language language) {
         Language savedLanguage = repository.save(language);
         return savedLanguage;

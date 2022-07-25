@@ -13,7 +13,7 @@ public class App {
         // String url = "https://raw.githubusercontent.com/alura-cursos/imersao-java/api/NASA-APOD.json";
         // ContentExtractor extractor = new NasaContentExtractor();
 
-        String url = "http://localhost:8080/languages";
+        String url = "https://ldsz-api-languages.herokuapp.com/languages";
         ContentExtractor extractor = new ImdbContentExtractor();
 
         var http = new ClientHttp();
