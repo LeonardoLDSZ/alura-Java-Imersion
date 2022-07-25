@@ -6,15 +6,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping("/languages")
 public class LanguageController {
 
     @Autowired
     private LanguageRepository repository;
 
-    @GetMapping("/languages")
+    @GetMapping
     public List<Language> obtainLanguages() {
         List<Language> languages = repository.findAll();
         return languages;
