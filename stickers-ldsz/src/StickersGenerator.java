@@ -24,7 +24,7 @@ public class StickersGenerator {
 
         int imgWidth = originalImage.getWidth();
         int imgHeight = originalImage.getHeight();
-        int imgNewHeight = imgHeight + 200;
+        int imgNewHeight = imgHeight + 170;
 
         BufferedImage newImg = new BufferedImage(imgWidth, imgNewHeight, BufferedImage.TRANSLUCENT);
 
@@ -35,13 +35,13 @@ public class StickersGenerator {
 
         // font configuration
 
-        var imgFont = new Font(Font.SANS_SERIF, Font.BOLD, 64);
-        graphics.setColor(Color.GREEN);
+        var imgFont = new Font(Font.SANS_SERIF, Font.ITALIC, 80);
+        graphics.setColor(Color.YELLOW);
         graphics.setFont(imgFont);
 
         // write a phrase in the new image
 
-        graphics.drawString("GOODONE", 100, imgNewHeight - 100);
+        graphics.drawString("GOOD ONE", 500, imgNewHeight - 50);
 
         // print the image in a file
 
