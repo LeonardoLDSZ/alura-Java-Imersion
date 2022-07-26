@@ -2,7 +2,7 @@
 
 https://www.alura.com.br/
 
-During the Java immersion we learned to consume an API, we created a sticker generator and an API from scratch, publishing it in the cloud on Heroku.
+This project is being carried out during the Java Immersion, where the main focus is to teach Java, Make Requests in APIs (IMDB and Nasa), Modify Images, Spring Framework, in addition to Database (MongoDB) and Deploy (Heroku)
 
 #Technologies used
 
